@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  noarch: generic
+  skip: true # [not linux]
 
 requirements:
   run:
@@ -25,6 +25,7 @@ about:
   license: LicenseRef-NVIDIA-End-User-License-Agreement
   license_file: LICENSE.txt
   license_url: https://docs.nvidia.com/cuda/cublasmp/license/index.html
+  license_family: Other
   summary: Meta-package containing all NVIDIA cuBLASMp packages, not intended for use in a conda-build context.
   description: |
     NVIDIA cuBLASMp is a high performance, multi-process, GPU accelerated library for distributed basic dense linear algebra.
@@ -32,6 +33,9 @@ about:
   doc_url: https://docs.nvidia.com/cuda/cublasmp/
 
 extra:
+  skip-lints:
+    - missing_dev_url
+    - deprecate_license_url
   recipe-maintainers:
     - almogsegal
     - mrogowski
