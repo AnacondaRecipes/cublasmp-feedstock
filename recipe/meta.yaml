@@ -31,10 +31,10 @@ about:
     NVIDIA cuBLASMp is a high performance, multi-process, GPU accelerated library for distributed basic dense linear algebra.
     cuBLASMp is compatible with 2D block-cyclic data layout and provides PBLAS-like C APIs.
   doc_url: https://docs.nvidia.com/cuda/cublasmp/
+  dev_url: https://docs.nvidia.com/cuda/cublasmp/
 
 extra:
   skip-lints:
-    - missing_dev_url
     - deprecate_license_url
   recipe-maintainers:
     - almogsegal
